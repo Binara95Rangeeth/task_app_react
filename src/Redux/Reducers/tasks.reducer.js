@@ -12,7 +12,7 @@ export function allTasks(state = [], action) {
     case taskConstants.CHANGE_TASK_COMPL:
       return {
         tasks: state.tasks.map((t) => {
-          if (t.id == action.id) {
+          if (t.id === action.id) {
             t.task_done = !t.task_done;
           }
           return t;

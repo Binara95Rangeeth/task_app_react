@@ -55,17 +55,17 @@ function MessageBoard() {
           alignItems="center"
         >
           <div>
-            {message.type == "warning" ? (
+            {message.type === "warning" ? (
               <WarningIcon style={{ color: "#ffbb00" }} />
             ) : (
               ""
             )}
-            {message.type == "error" ? (
+            {message.type === "error" ? (
               <ErrorIcon style={{ color: "#fa461b" }} />
             ) : (
               ""
             )}
-            {message.type == "success" ? (
+            {message.type === "success" ? (
               <CheckBoxIcon style={{ color: "#43d787" }} />
             ) : (
               ""
